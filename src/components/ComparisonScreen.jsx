@@ -76,11 +76,7 @@ export default function ComparisonScreen({ level, processes, userAlgorithm, quan
 
   const getMetricClass = (isWinner) => isWinner ? "text-yellow-400 font-bold" : "text-gray-300";
 
-  const isAlgoUnlocked = (algoId) => {
-       return level === 1 ? algoId === 'FCFS' : 
-              level === 2 ? ['FCFS', 'SJF'].includes(algoId) : 
-              level === 3 ? ['FCFS', 'SJF', 'RR'].includes(algoId) : true;
-  };
+  const isAlgoUnlocked = () => true;
 
   // Helper to reorder algorithms for bar visualization (User choice first)
   const getOrderedAlgos = (algos) => {
@@ -260,9 +256,11 @@ export default function ComparisonScreen({ level, processes, userAlgorithm, quan
                 <div className="flex flex-col gap-[2px]">
                     {algosConf.map((algo) => {
                         if (!isAlgoUnlocked(algo.id)) return null;
-                        const schedule = results[algo.id].schedule;
-                        // Find max endTime across entire simulation to normalize percentages
-                        const globalMaxTime = Math.max(...algosConf.filter(a=>isAlgoUnlocked(a.id)).map(a => Math.max(...results[a.id].schedule.map(s=>s.endTime))));
+                        const schedule = results[algo.id]?.schedule || [];
+                        // Find max endTime across entire simulation to normalize percentages safely
+                        const getEndTimes = (a) => results[a.id]?.schedule?.length > 0 ? Math.max(...results[a.id].schedule.map(s=>s.endTime)) : 0;
+                        const globalMaxTime = Math.max(1, ...algosConf.map(getEndTimes));
+                        
                         
                         return (
                             <div key={`gantt-${algo.id}`} className="flex items-center bg-gray-900/30 group">
@@ -278,10 +276,10 @@ export default function ComparisonScreen({ level, processes, userAlgorithm, quan
                                         return (
                                             <motion.div
                                                 key={`g-${algo.id}-${i}`}
-                                                initial={{ scaleX: 0 }}
+                                                initial={{ scaleX: 0, originX: 0 }}
                                                 animate={{ scaleX: 1 }}
-                                                transition={{ duration: 0.3, delay: 2.0 + (i * 0.08), ease: "easeOut" }}
-                                                style={{ left: `${leftPercent}%`, width: `${widthPercent}%`, transformOrigin: 'left', backgroundColor: processColor }}
+                                                transition={{ duration: 0.3, delay: 0.8 + (i * 0.08), ease: "easeOut" }}
+                                                style={{ left: `${leftPercent}%`, width: `${widthPercent}%`, backgroundColor: processColor }}
                                                 className="absolute top-[2px] bottom-[2px] opacity-80 group-hover:opacity-100 border-r border-black"
                                                 title={`P${block.processId} | Start: ${block.startTime} | End: ${block.endTime}`}
                                             />

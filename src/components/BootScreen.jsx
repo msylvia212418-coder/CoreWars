@@ -60,7 +60,7 @@ export default function BootScreen({ onComplete }) {
           className="text-4xl md:text-6xl font-bold mb-4 tracking-wider text-blue-500"
           style={{ textShadow: '0 0 15px rgba(59, 130, 246, 0.8)' }}
         >
-          <TypewriterText text="CPU MANAGER" />
+          <TypewriterText text="CORE WARS" />
         </motion.div>
         
         <motion.div 
@@ -69,7 +69,7 @@ export default function BootScreen({ onComplete }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          Gamified Process Scheduling Simulator
+          Process Scheduling Simulator
         </motion.div>
 
         <div className="w-full h-2 bg-gray-900 border border-gray-800 rounded relative overflow-hidden">
