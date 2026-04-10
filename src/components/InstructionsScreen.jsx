@@ -34,7 +34,7 @@ export default function InstructionsScreen({ onClose }) {
                 <section>
                     <h3 className="text-blue-400 text-lg font-bold mb-2 border-l-4 border-blue-500 pl-2">1. MISSION OBJECTIVE</h3>
                     <p className="leading-relaxed">
-                        You are the CORE WARS COMMANDER. Incoming processes pile up in the <span className="text-white font-bold">READY QUEUE</span>. 
+                        You are the CoreWars Commander. Incoming processes pile up in the <span className="text-white font-bold">READY QUEUE</span>. 
                         Your job is to select the most efficient Algorithm to clear all tasks while minimizing <span className="text-yellow-400 font-bold">Waiting Time</span> and maximizing <span className="text-green-400 font-bold">CPU Utilization</span>.
                     </p>
                 </section>

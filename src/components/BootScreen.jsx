@@ -60,7 +60,7 @@ export default function BootScreen({ onComplete }) {
           className="text-4xl md:text-6xl font-bold mb-4 tracking-wider text-blue-500"
           style={{ textShadow: '0 0 15px rgba(59, 130, 246, 0.8)' }}
         >
-          <TypewriterText text="CORE WARS" />
+          <TypewriterText text="CoreWars" />
         </motion.div>
         
         <motion.div 
