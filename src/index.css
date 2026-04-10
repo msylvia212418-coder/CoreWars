@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #050814;
+  --color-panel: #0d1117;
+  --color-border: #1f2937;
+  --color-fcfs: #3B82F6;
+  --color-sjf: #22C55E;
+  --color-rr: #A855F7;
+  --color-priority: #F97316;
+}
+
+@layer base {
+  body {
+    @apply bg-base text-white overflow-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Cursor */
+body {
+  cursor: crosshair;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Background Grid Animation */
+.bg-grid {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  transform: perspective(500px) rotateX(60deg) translateY(-100px) translateZ(-200px);
+  animation: gridMove 10s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes gridMove {
+  0% { transform: perspective(500px) rotateX(60deg) translateY(0) translateZ(-200px); }
+  100% { transform: perspective(500px) rotateX(60deg) translateY(50px) translateZ(-200px); }
+}
+
+/* Glowing Colors */
+.glow-fcfs { box-shadow: 0 0 12px #3B82F6, 0 0 30px #3B82F640; border-color: #3B82F6; }
+.glow-sjf { box-shadow: 0 0 12px #22C55E, 0 0 30px #22C55E40; border-color: #22C55E; }
+.glow-rr { box-shadow: 0 0 12px #A855F7, 0 0 30px #A855F740; border-color: #A855F7; }
+.glow-priority { box-shadow: 0 0 12px #F97316, 0 0 30px #F9731640; border-color: #F97316; }
+
+/* Text Glows */
+.text-glow-fcfs { text-shadow: 0 0 8px #3B82F6; color: #3B82F6; }
+.text-glow-sjf { text-shadow: 0 0 8px #22C55E; color: #22C55E; }
+.text-glow-rr { text-shadow: 0 0 8px #A855F7; color: #A855F7; }
+.text-glow-priority { text-shadow: 0 0 8px #F97316; color: #F97316; }
+
+/* Panels */
+.game-panel {
+  @apply bg-panel border-border rounded-xl backdrop-blur-md relative border;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5), 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.game-panel::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: -1px; right: -1px; bottom: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1), transparent 60%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* Process Colors */
+.process-color-0 { background-color: #EF4444; }
+.process-color-1 { background-color: #3B82F6; }
+.process-color-2 { background-color: #22C55E; }
+.process-color-3 { background-color: #F59E0B; }
+.process-color-4 { background-color: #A855F7; }
+.process-color-5 { background-color: #EC4899; }
+.process-color-6 { background-color: #14B8A6; }
+.process-color-7 { background-color: #F97316; }
+
+@keyframes borderGlowFCFS { 0%, 100% { border-color: #1f2937; } 50% { border-color: #3B82F6; box-shadow: inset 0 0 10px #3B82F620; } }
+@keyframes borderGlowSJF { 0%, 100% { border-color: #1f2937; } 50% { border-color: #22C55E; box-shadow: inset 0 0 10px #22C55E20; } }
+@keyframes borderGlowRR { 0%, 100% { border-color: #1f2937; } 50% { border-color: #A855F7; box-shadow: inset 0 0 10px #A855F720; } }
+@keyframes borderGlowPriority { 0%, 100% { border-color: #1f2937; } 50% { border-color: #F97316; box-shadow: inset 0 0 10px #F9731620; } }
+
+.active-border-fcfs { animation: borderGlowFCFS 3s infinite; }
+.active-border-sjf { animation: borderGlowSJF 3s infinite; }
+.active-border-rr { animation: borderGlowRR 3s infinite; }
+.active-border-priority { animation: borderGlowPriority 3s infinite; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-base); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4B5563; }
+
+@keyframes slide {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
