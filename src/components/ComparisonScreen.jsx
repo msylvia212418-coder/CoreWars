@@ -271,7 +271,7 @@ export default function ComparisonScreen({ level, processes, userAlgorithm, quan
                                     {schedule.map((block, i) => {
                                         const leftPercent = (block.startTime / globalMaxTime) * 100;
                                         const widthPercent = ((block.endTime - block.startTime) / globalMaxTime) * 100;
-                                        const processColor = `hsl(${(block.processId * 137.5) % 360}, 70%, 50%)`;
+                                        const proc = processes.find(p => p.id === block.processId);
                                         
                                         return (
                                             <motion.div
@@ -279,9 +279,9 @@ export default function ComparisonScreen({ level, processes, userAlgorithm, quan
                                                 initial={{ scaleX: 0, originX: 0 }}
                                                 animate={{ scaleX: 1 }}
                                                 transition={{ duration: 0.3, delay: 0.8 + (i * 0.08), ease: "easeOut" }}
-                                                style={{ left: `${leftPercent}%`, width: `${widthPercent}%`, backgroundColor: processColor }}
-                                                className="absolute top-[2px] bottom-[2px] opacity-80 group-hover:opacity-100 border-r border-black"
-                                                title={`P${block.processId} | Start: ${block.startTime} | End: ${block.endTime}`}
+                                                style={{ left: `${leftPercent}%`, width: `${widthPercent}%` }}
+                                                className={`absolute top-[2px] bottom-[2px] opacity-80 group-hover:opacity-100 border-r border-black process-color-${proc?.colorIdx}`}
+                                                title={`${block.processId} | Start: ${block.startTime} | End: ${block.endTime}`}
                                             />
                                         );
                                     })}

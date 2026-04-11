@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { playClick, playHover } from '../utils/audioSystem';
+import { useCareer } from '../hooks/useCareer';
 
-export default function CareerDashboard({ stats, onClose, onWipe }) {
+export default function CareerDashboard({ onClose, onWipe }) {
+  const { stats, wipeCareer } = useCareer();
   return (
     <motion.div 
         initial={{ opacity: 0 }}
@@ -54,7 +56,7 @@ export default function CareerDashboard({ stats, onClose, onWipe }) {
 
             <div className="flex justify-between items-center pt-6 border-t border-border mt-auto">
                 <motion.button 
-                    onClick={() => { playClick(); onWipe(); }}
+                    onClick={() => { playClick(); wipeCareer(); onWipe(); }}
                     onMouseEnter={playHover}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
