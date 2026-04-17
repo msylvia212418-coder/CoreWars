@@ -128,8 +128,13 @@ Each process carries a priority number. Lower value = higher priority. Critical 
 ```
 src/
 │
-├── App.jsx                    ← Master screen controller + game state
+├── App.jsx                    ← Master screen controller + game state + routing
 ├── index.css                  ← Global animations, keyframes, grid background
+│
+├── auth/
+│   ├── Login.jsx              ← User login screen
+│   ├── Signup.jsx             ← User registration screen
+│   └── authService.js         ← Authentication logic (API/local storage)
 │
 ├── game/
 │   ├── GameEngine.js          ← Simulation tick loop (step-by-step, 700ms/unit)
