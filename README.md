@@ -19,14 +19,14 @@
 
 # 🧠 Gamified Intelligent Process Scheduling Simulator
 
-**A cyberpunk-themed, fully animated game where YOU are the CPU Manager.**  
+**A cyberpunk-themed, fully animated game where YOU are the CoreWars Commander.**  
 Learn OS scheduling algorithms by actually playing them — not just reading about them.
 
 [🎮 Live Demo](#) · [📽️ Watch Demo Video](#) · [🐛 Report Bug](#) · [💡 Request Feature](#)
 
 <br/>
 
-![Game Preview](https://placehold.co/900x450/050814/3B82F6?text=CPU+MANAGER+%E2%80%94+Gameplay+Preview)
+![Game Preview](https://placehold.co/900x450/050814/3B82F6?text=COREWARS+%E2%80%94+Gameplay+Preview)
 
 </div>
 
@@ -56,7 +56,7 @@ Learn OS scheduling algorithms by actually playing them — not just reading abo
 
 > *"What if learning OS scheduling wasn't just reading a textbook — but actually managing a CPU under pressure?"*
 
-**CPU Manager** is a gamified, browser-based simulator built as a final-year Operating Systems project. It transforms four core CPU scheduling algorithms — FCFS, SJF, Round Robin, and Priority Scheduling — into an interactive, animated game experience.
+**CoreWars** is a gamified, browser-based simulator built as a final-year Operating Systems project. It transforms four core CPU scheduling algorithms — FCFS, SJF, Round Robin, and Priority Scheduling — into an interactive, animated game experience.
 
 The user inputs their own processes (burst time, arrival time, priority), picks a scheduling strategy, watches the CPU execute them in real-time with full animation, and gets scored on their efficiency. After each level, all four algorithms run silently on the same data and display a side-by-side comparison — so you immediately see what you could have done better.
 
@@ -205,10 +205,10 @@ src/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/cpu-manager-simulator.git
+git clone https://github.com/YOUR_USERNAME/CoreWars.git
 
 # 2. Navigate into the project
-cd cpu-manager-simulator
+cd CoreWars
 
 # 3. Install dependencies
 npm install
@@ -259,7 +259,7 @@ Bonuses:
 
 | Score | Stars | Rank |
 |---|---|---|
-| 90 – 100 | ⭐⭐⭐ | Expert CPU Manager |
+| 90 – 100 | ⭐⭐⭐ | Expert CoreWars Commander |
 | 70 – 89 | ⭐⭐ | Advanced |
 | 50 – 69 | ⭐ | Intermediate |
 | Below 50 | 💀 | Beginner — Try Again |
@@ -349,7 +349,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Your Name** — [@yourtwitter](https://twitter.com/yourtwitter) — your.email@example.com
 
-**Project Link:** [https://github.com/YOUR_USERNAME/cpu-manager-simulator](https://github.com/YOUR_USERNAME/cpu-manager-simulator)
+**Project Link:** [https://github.com/YOUR_USERNAME/CoreWars](https://github.com/YOUR_USERNAME/CoreWars)
 
 ---
 
