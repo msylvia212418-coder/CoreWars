@@ -7,7 +7,7 @@ export default function ProcessInputScreen({ level, onStart, onBack }) {
   
   // Level constraints
   const minRows = level === 5 ? 6 : 1;
-  const maxRows = level === 1 ? 4 : level === 2 ? 5 : level === 3 ? 6 : level === 4 ? 6 : 8;
+  const maxRows = 10;
   const showPriority = level >= 4;
 
   const [processes, setProcesses] = useState(() => {
