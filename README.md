@@ -32,25 +32,6 @@ Learn OS scheduling algorithms by actually playing them — not just reading abo
 
 ---
 
-## 📖 Table of Contents
-
-- [About The Project](#-about-the-project)
-- [Game Features](#-game-features)
-- [Algorithms Implemented](#-algorithms-implemented)
-- [Game Flow](#-game-flow)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [How To Play](#-how-to-play)
-- [Scoring System](#-scoring-system)
-- [AI Recommendation System](#-ai-recommendation-system)
-- [Screenshots](#-screenshots)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
-
----
 
 ## 🎯 About The Project
 
@@ -301,27 +282,6 @@ function recommendAlgorithm(processes, level) {
 | Process Input | Algorithm Comparison | Score Reveal |
 |---|---|---|
 | ![Input](https://placehold.co/300x170/050814/F97316?text=Process+Input) | ![Compare](https://placehold.co/300x170/050814/14B8A6?text=Comparison) | ![Score](https://placehold.co/300x170/050814/FBBF24?text=Score+Reveal) |
-
----
-
-## 🗓️ Roadmap
-
-- [x] FCFS, SJF, Round Robin, Priority algorithm logic
-- [x] AI recommendation engine
-- [x] 5-level game structure design
-- [x] Scoring and ranking system design
-- [ ] Boot screen with typewriter animation
-- [ ] Instructions page
-- [ ] Level select screen
-- [ ] Custom process input screen
-- [ ] CPU hex animation + progress ring
-- [ ] Real-time Gantt chart
-- [ ] Score modal with confetti
-- [ ] Post-level comparison screen
-- [ ] Multi-CPU boss level (Level 5)
-- [ ] Sound effects via Web Audio API
-- [ ] Mobile responsiveness
-- [ ] Leaderboard (local storage)
 
 ---
 
