@@ -9,12 +9,12 @@
 <br/><br/>
 
 ```
-               ██████╗ ██████╗ ██████╗ ███████╗██╗    ██╗ █████╗ ██████╗ ███████╗
-              ██╔════╝██╔═══██╗██╔══██╗██╔════╝██║    ██║██╔══██╗██╔══██╗██╔════╝
-              ██║     ██║   ██║██████╔╝█████╗  ██║ █╗ ██║███████║██████╔╝███████╗
-              ██║     ██║   ██║██╔══██╗██╔══╝  ██║███╗██║██╔══██║██╔══██╗╚════██║
-              ╚██████╗╚██████╔╝██║  ██║███████╗╚███╔███╔╝██║  ██║██║  ██║███████║
-               ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+                 ██████╗ ██████╗ ██████╗ ███████╗██╗    ██╗ █████╗ ██████╗ ███████╗
+                ██╔════╝██╔═══██╗██╔══██╗██╔════╝██║    ██║██╔══██╗██╔══██╗██╔════╝
+                ██║     ██║   ██║██████╔╝█████╗  ██║ █╗ ██║███████║██████╔╝███████╗
+                ██║     ██║   ██║██╔══██╗██╔══╝  ██║███╗██║██╔══██║██╔══██╗╚════██║
+                ╚██████╗╚██████╔╝██║  ██║███████╗╚███╔███╔╝██║  ██║██║  ██║███████║
+                 ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 ```
 
 # 🧠 Gamified Intelligent Process Scheduling Simulator
@@ -26,7 +26,7 @@ Learn OS scheduling algorithms by actually playing them — not just reading abo
 
 <br/>
 
-![Game Preview](https://placehold.co/900x450/050814/3B82F6?text=COREWARS+%E2%80%94+Gameplay+Preview)
+![Game Preview]("C:\Users\ADMIN\Downloads\WhatsApp Image 2026-04-11 at 9.05.10 AM (1).jpeg")
 
 </div>
 
@@ -186,7 +186,7 @@ src/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/CoreWars.git
+git clone https://github.com/msylvia212418-coder/CoreWars.git
 
 # 2. Navigate into the project
 cd CoreWars
@@ -271,20 +271,6 @@ function recommendAlgorithm(processes, level) {
 
 ---
 
-## 📸 Screenshots
-
-> *(Add your screenshots here once the project is built)*
-
-| Boot Screen | Level Select | Simulation |
-|---|---|---|
-| ![Boot](https://placehold.co/300x170/050814/3B82F6?text=Boot+Screen) | ![Level](https://placehold.co/300x170/050814/A855F7?text=Level+Select) | ![Sim](https://placehold.co/300x170/050814/22C55E?text=Simulation) |
-
-| Process Input | Algorithm Comparison | Score Reveal |
-|---|---|---|
-| ![Input](https://placehold.co/300x170/050814/F97316?text=Process+Input) | ![Compare](https://placehold.co/300x170/050814/14B8A6?text=Comparison) | ![Score](https://placehold.co/300x170/050814/FBBF24?text=Score+Reveal) |
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! If you'd like to improve the algorithms, add new animations, or fix bugs:
@@ -307,15 +293,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-**Your Name** — [@yourtwitter](https://twitter.com/yourtwitter) — your.email@example.com
-
-**Project Link:** [https://github.com/YOUR_USERNAME/CoreWars](https://github.com/YOUR_USERNAME/CoreWars)
-
----
+Made with ❤️ by Sylvia.M
 
 <div align="center">
-
-Made with ❤️ as a Final Year OS Project
 
 *"If the CPU can schedule — so can you."*
 
