@@ -14,7 +14,7 @@
                 ██║     ██║   ██║██████╔╝█████╗  ██║ █╗ ██║███████║██████╔╝███████╗
                 ██║     ██║   ██║██╔══██╗██╔══╝  ██║███╗██║██╔══██║██╔══██╗╚════██║
                 ╚██████╗╚██████╔╝██║  ██║███████╗╚███╔███╔╝██║  ██║██║  ██║███████║
-                 ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+                  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 ```
 
 # 🧠 Gamified Intelligent Process Scheduling Simulator
@@ -25,9 +25,6 @@ Learn OS scheduling algorithms by actually playing them — not just reading abo
 [🎮 Live Demo](#) · [📽️ Watch Demo Video](#) · [🐛 Report Bug](#) · [💡 Request Feature](#)
 
 <br/>
-
-![Game Preview]("C:\Users\ADMIN\Downloads\WhatsApp Image 2026-04-11 at 9.05.10 AM (1).jpeg")
-
 </div>
 
 ---
